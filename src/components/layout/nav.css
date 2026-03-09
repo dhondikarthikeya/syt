@@ -1,0 +1,166 @@
+.sytHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.sytContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.sytRow {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sytLogo {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Desktop Nav */
+.sytNavDesktop {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.sytNavLink {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  transition: 0.2s ease;
+}
+
+.sytNavLink:hover {
+  color: #000;
+}
+
+.sytCtaDesktop {
+  display: flex;
+  align-items: center;
+}
+
+.sytCtaBtn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.sytCtaBtn:hover {
+  opacity: 0.85;
+}
+
+/* Mobile button hidden on desktop */
+.sytMobileBtn {
+  display: none;
+  background: transparent;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #000;
+  transition: 0.2s ease;
+}
+
+.sytMobileBtn:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+/* Mobile dropdown */
+.sytMobilePanel {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.08);
+}
+
+.sytMobileInner {
+  padding: 16px 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.sytMobileLink {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.75);
+  padding: 10px 10px;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+
+.sytMobileLink:hover {
+  color: #000;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.sytMobileCta {
+  margin-top: 8px;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.sytMobileCta:hover {
+  opacity: 0.85;
+}
+
+/* Responsive: show hamburger only on small screens */
+@media (max-width: 1024px) {
+  .sytNavDesktop {
+    display: none;
+  }
+
+  .sytCtaDesktop {
+    display: none;
+  }
+
+  .sytMobileBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .sytContainer {
+    padding: 0 16px;
+  }
+
+  .sytLogo {
+    font-size: 18px;
+  }
+}
