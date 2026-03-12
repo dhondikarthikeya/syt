@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <>
       <Nav />
-      <div style={{ height: 80 }} />
+      <div style={{ height: 60 }} />
     </>
   );
 }
