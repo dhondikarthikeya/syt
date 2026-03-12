@@ -1240,7 +1240,7 @@ body {
   .flow-card,
   .industry-card {
     padding: 20px 16px;
-    border-radius: 18px;
+    border-radius: 5px;
   }
 
   .positioning-card h3,
