@@ -6,23 +6,23 @@ import "./page.css";
 const operatingModel = [
   {
     title: "Strategy",
-    image: "/images/strategy.jpg",
+    image: "/operating/strategy.png",
   },
   {
     title: "Architecture",
-    image: "/images/architecture.jpg",
+    image: "/operating/architecture.jpg",
   },
   {
     title: "Engineering",
-    image: "/images/engineering.jpg",
+    image: "/operating/engineering.png",
   },
   {
     title: "Intelligence",
-    image: "/images/intelligence.jpg",
+    image: "/operating/intel.png",
   },
   {
     title: "Optimization",
-    image: "/images/optimization.jpg",
+    image: "/operating/optimization.png",
   },
 ];
 
@@ -199,27 +199,38 @@ const systemsLayers = [
 //   "Intelligence",
 //   "Optimization",
 // ];
-
 const industries = [
   {
     title: "Technology & SaaS",
-    image: "/hero/data.png",
+    image: "/industries/saas.png",
   },
   {
     title: "Manufacturing & Industrial Operations",
-    image: "/hero/architecture.png",
+    image: "/industries/manufacturing.png",
   },
   {
     title: "Automotive & Mobility",
-    image: "/hero/integration.png",
+    image: "/industries/automotive.png",
   },
   {
     title: "Energy & Utilities",
-    image: "/hero/cloud.png",
+    image: "/industries/energy.png",
   },
   {
     title: "Infrastructure & Construction",
-    image: "/hero/architecture.png",
+    image: "/industries/infra.png",
+  },
+  {
+    title: "Banking & Financial Services",
+    image: "/industries/banking.png",
+  },
+  {
+    title: "Retail & E-Commerce",
+    image: "/industries/retail.png",
+  },
+  {
+    title: "Media & Entertainment",
+    image: "/industries/media.png",
   },
 ];
 
@@ -496,9 +507,32 @@ export default function Page() {
           </article>
 
           {index < operatingModel.length - 1 && (
-            <span className="flow-arrow" aria-hidden="true">
-              →
-            </span>
+  <span className="flow-arrow" aria-hidden="true">
+    <svg
+      viewBox="0 0 64 40"
+      xmlns="http://www.w3.org/2000/svg"
+      className="flow-arrow-svg"
+    >
+      <path
+        d="M4 6 C30 6, 28 34, 52 34"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="5"
+        strokeLinecap="round"
+      />
+      <path
+        d="M45 27 L52 34 L44 38"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </span>
+
+
+
           )}
         </React.Fragment>
       ))}
@@ -537,36 +571,62 @@ export default function Page() {
 </section>
 
       <section className="industries-section">
-        <div className="section-shell">
-          <div className="section-heading">
-            <p className="section-eyebrow">Industries Served</p>
-            <h2>Built for complex environments across sectors</h2>
-            <p className="section-description">
-              Our engineering approach is designed to adapt across digital,
-              industrial, operational, and infrastructure-heavy industries.
-            </p>
-          </div>
+  <div className="section-shell">
+    <div className="section-heading">
+      <p className="section-eyebrow">Industries Served</p>
+      <h2>Built for complex environments across sectors</h2>
+      <p className="section-description">
+        Our engineering approach is designed to adapt across digital,
+        industrial, operational, and infrastructure-heavy industries.
+      </p>
+    </div>
 
-          <div className="industries-grid">
-            {industries.map((industry) => (
-              <article key={industry.title} className="industry-card">
-                <div className="industry-image-wrap">
-                  <img
-                    src={industry.image}
-                    alt={industry.title}
-                    className="industry-image"
-                    loading="lazy"
-                  />
-                </div>
+    <div className="industries-scroll-wrap">
+      <div className="industries-scroll" id="industriesScroll">
+        {industries.map((industry) => (
+          <article key={industry.title} className="industry-card">
+            <div className="industry-image-wrap">
+              <img
+                src={industry.image}
+                alt={industry.title}
+                className="industry-image"
+                loading="lazy"
+              />
+            </div>
 
-                <div className="industry-card-content">
-                  <h3>{industry.title}</h3>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+            <div className="industry-card-content">
+              <h3>{industry.title}</h3>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <div className="industries-arrows">
+        <button
+          className="industry-arrow"
+          onClick={() =>
+            document
+              .getElementById("industriesScroll")
+              .scrollBy({ left: -340, behavior: "smooth" })
+          }
+        >
+          ←
+        </button>
+
+        <button
+          className="industry-arrow"
+          onClick={() =>
+            document
+              .getElementById("industriesScroll")
+              .scrollBy({ left: 340, behavior: "smooth" })
+          }
+        >
+          →
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section className="final-cta-section">
         <div className="section-shell">
