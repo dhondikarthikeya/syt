@@ -3,10 +3,5 @@
 import Nav from "./Nav";
 
 export default function Header() {
-  return (
-    <>
-      <Nav />
-      <div style={{ height: 60 }} />
-    </>
-  );
+  return <Nav />;
 }

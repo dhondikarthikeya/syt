@@ -2,6 +2,7 @@
 
 import React, { useEffect, useMemo, useState } from "react";
 import "./page.css";
+import Link from "next/link";
 
 const operatingModel = [
   {
@@ -123,48 +124,55 @@ const positioningItems = [
     image: "/hero/integration.png",
   },
 ];
-
 const capabilities = [
   {
     title: "Strategic Technology Consulting",
     image: "/hero/architecture.png",
+    href: "/marketing/services/strategic",
   },
   {
     title: "Product & Digital Engineering",
     image: "/hero/data.png",
+    href: "/marketing/services/product",
   },
   {
     title: "AI & Agentic Systems",
     image: "/hero/ai.png",
+    href: "/marketing/services/ai",
   },
   {
     title: "Data & Analytics Engineering",
     image: "/hero/data.png",
+    href: "/marketing/services/data-analytics",
   },
   {
     title: "Cloud & Infrastructure Engineering",
     image: "/hero/cloud.png",
+    href: "/marketing/services/cloud-infrastructure",
   },
   {
     title: "Experience & Interface Design",
     image: "/hero/integration.png",
+    href: "/marketing/services/experience-design",
   },
   {
     title: "Industrial & Physical Systems Engineering",
     image: "/hero/architecture.png",
+    href: "/marketing/services/industrial-systems",
   },
 
   // New technologies
   {
     title: "Edge AI & IoT Systems",
     image: "/hero/iot.png",
+    href: "/marketing/services/edge-ai-iot",
   },
   {
     title: "Cybersecurity Engineering",
     image: "/hero/security.png",
+    href: "/marketing/services/cybersecurity",
   },
 ];
-
 const systemsLayers = [
   {
     title: "Integrated system layers",
@@ -410,28 +418,34 @@ export default function Page() {
     </div>
 
     <div className="capabilities-grid">
-      {capabilities.map((item) => (
-        <article key={item.title} className="capability-card">
-          <div className="capability-image-wrap">
-            <img
-              src={item.image}
-              alt={item.title}
-              className="capability-image"
-              loading="lazy"
-            />
-          </div>
+      {capabilities.map((item) => {
+        const card = (
+          <article key={item.title} className="capability-card">
+            <div className="capability-image-wrap">
+              <img
+                src={item.image}
+                alt={item.title}
+                className="capability-image"
+                loading="lazy"
+              />
+            </div>
 
-          <div className="capability-card-content">
-            <h3>{item.title}</h3>
-          </div>
+            <div className="capability-card-content">
+              <h3>{item.title}</h3>
+            </div>
 
-          {/* Arrow box */}
-          <div className="capability-arrow">
-            →
-          </div>
+            <div className="capability-arrow">→</div>
+          </article>
+        );
 
-        </article>
-      ))}
+        return item.href ? (
+          <Link key={item.title} href={item.href} className="capability-link">
+            {card}
+          </Link>
+        ) : (
+          <div key={item.title}>{card}</div>
+        );
+      })}
     </div>
   </div>
 </section>
