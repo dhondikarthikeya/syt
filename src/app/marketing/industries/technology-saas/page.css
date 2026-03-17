@@ -111,7 +111,7 @@ img {
 .capabilities-description {
   color: #475569;
   line-height: 1.5;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 .text-stack {
@@ -391,7 +391,7 @@ img {
 .solutions-intro {
   margin: 22px 0 0;
   max-width: 460px;
-  font-size: 17px;
+  font-size: 14px;
   line-height: 1.5;
   color: #475569;
 }
@@ -451,7 +451,7 @@ img {
 
 .solution-card p {
   margin: 0;
-  font-size: 17px;
+  font-size: 14px;
   line-height: 1.5;
   color: #475569;
 }
@@ -723,7 +723,7 @@ img {
 .case-study-description {
   margin: 24px 0 0;
   color: #e2e8f0;
-  font-size: 19px;
+  font-size: 15px;
 }
 
 .stats-grid {
@@ -939,7 +939,7 @@ img {
   }
 
   .text-stack {
-    margin-top: 24px;
+    margin-top: 0px;
   }
 
   .outcomes-grid {
@@ -1112,7 +1112,7 @@ img {
   .case-study-card,
   .info-card,
   .insight-card {
-    padding: 24px;
+    padding: 18px;
   }
 
   .solution-card h3 {
