@@ -327,14 +327,14 @@
 .strategic-section-text {
   margin-top: 1.25rem;
   font-size: 1rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
   color: #475569;
 }
 
 .strategic-grid {
   display: grid;
   gap: 1.5rem;
-  margin-top: 2.5rem;
+  /* margin-top: 2.5rem; */
 }
 
 .strategic-grid-2 {

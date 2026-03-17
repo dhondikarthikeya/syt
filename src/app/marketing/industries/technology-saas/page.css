@@ -110,7 +110,7 @@ img {
 .solution-card p,
 .capabilities-description {
   color: #475569;
-  line-height: 1.8;
+  line-height: 1.5;
   font-size: 17px;
 }
 
@@ -392,7 +392,7 @@ img {
   margin: 22px 0 0;
   max-width: 460px;
   font-size: 17px;
-  line-height: 1.8;
+  line-height: 1.5;
   color: #475569;
 }
 
@@ -452,7 +452,7 @@ img {
 .solution-card p {
   margin: 0;
   font-size: 17px;
-  line-height: 1.8;
+  line-height: 1.5;
   color: #475569;
 }
 
