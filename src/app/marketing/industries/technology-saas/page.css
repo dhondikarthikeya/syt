@@ -935,7 +935,7 @@ img {
   }
 
   .hero-content h1 {
-    font-size: clamp(2.2rem, 8vw, 4rem);
+    font-size: clamp(2rem, 8vw, 4rem);
   }
 
   .text-stack {
