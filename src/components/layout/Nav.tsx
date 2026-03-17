@@ -110,7 +110,7 @@ const links: NavLinkItem[] = [
     children: [
       {
         label: "Technology & SaaS",
-        href: "/industries/technology-saas",
+        href: "/marketing/industries/technology-saas",
         icon: Briefcase,
         colorClass: "iconBlue",
       },
