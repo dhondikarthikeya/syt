@@ -103,7 +103,7 @@ const links: NavLinkItem[] = [
       },
     ],
   },
-  { label: "Operating Model", href: "/operating-model" },
+  { label: "Operating Model", href: "/marketing/operating-model" },
   {
     label: "Industries",
     href: "/industries",
@@ -158,8 +158,8 @@ const links: NavLinkItem[] = [
       },
     ],
   },
-  { label: "Insights", href: "/insights" },
-  { label: "About", href: "/about" },
+  { label: "Insights", href: "/marketing/insights" },
+  { label: "About", href: "/marketing/about" },
 ];
 
 export default function Nav() {

@@ -431,6 +431,7 @@ body {
 
 .sytMobileAccordionPanelInner {
   overflow: hidden;
+  padding-left: 15px;
 }
 
 .sytMobileSubItem {

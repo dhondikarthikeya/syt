@@ -111,7 +111,7 @@ img {
 .capabilities-description {
   color: #475569;
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .text-stack {
@@ -391,7 +391,7 @@ img {
 .solutions-intro {
   margin: 22px 0 0;
   max-width: 460px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
   color: #475569;
 }
@@ -451,7 +451,7 @@ img {
 
 .solution-card p {
   margin: 0;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
   color: #475569;
 }
